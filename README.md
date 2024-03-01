@@ -1,7 +1,14 @@
-# Cloudflare DNS Updater
+# Cloudflare DNS Updater - GUI & No GUI options 
 
 ## Overview
-This Python script provides a graphical user interface (GUI) to update DNS records in Cloudflare. It retrieves the public IP address of the user's machine using the ipify service and updates a specified DNS record in Cloudflare with this IP address.
+This Python script provides a graphical user interface (GUI) or an automatic CLI script to update DNS records in Cloudflare. It retrieves the public IP address of the user's machine using the ipify service and updates a specified DNS record in Cloudflare with this IP address. 
+
+## No GUI Version
+Created for running alongside a Reverse Proxy but it can run on any server! For now you must create your config using the GUI version, then you can copy the No-GUI version along with the config to your server and setup a service to start on boot.
+
+TO DO: 
+- Add built-in config creation to the No-GUI version so you don't need to run the GUI version first
+- Add optional auto-create service option during config setup - Export to .service file or insert into systemctl automatically if running on the intended server
 
 ## Features
 - Retrieves the current public IP address.
